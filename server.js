@@ -22,7 +22,7 @@ var checkRateLimit = require('./lib/rate-limit')(process.env.CORSANYWHERE_RATELI
 var cors_proxy = require('./lib/cors-anywhere');
 cors_proxy.createServer({
   originBlacklist: originBlacklist,
-  originWhitelist: ["https://megadeportes.online", "https://gregorsamsa.life", "https://vercomofutbol.xyz", "https://megatelevisionhd.com"],
+  originWhitelist: ["https://megadeportes.online", "https://gregorsamsa.life", "https://vercomofutbol.xyz", "https://megatelevisionhd.com", "https://senernicautam.biz"],
   requireHeader: ['origin', 'x-requested-with'],
   checkRateLimit: checkRateLimit,
   removeHeaders: [
